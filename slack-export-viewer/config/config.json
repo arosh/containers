@@ -1,0 +1,15 @@
+{
+    "listeners":{
+        "*:8000":{
+            "pass":"applications/hfaran"
+        }
+    },
+    "applications":{
+        "hfaran":{
+            "type":"python 3",
+            "path":"/www/",
+            "module": "start",
+             "callable": "app"
+        }
+    }
+}
